@@ -8,3 +8,17 @@
 
     --fuentePrincipal: "Staatliches", serif;
 }
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    font-size: 62.5%; /* truco para que 1rem = 10px*/
+    box-sizing: border-box; /*truco box model*/
+  }
+
+*, *:before, *:after { /*truco box model*/
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px; /* truco para que 1rem = 10px*/
+}
